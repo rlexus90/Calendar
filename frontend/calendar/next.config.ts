@@ -1,28 +1,13 @@
-import withPWA from '@ducanh2912/next-pwa';
+import Serwist from '@serwist/next'
 
 // import type { NextConfig } from 'next';
 
 
-const PWA= withPWA({
-	dest: 'public',
-	cacheOnFrontEndNav:true,
-	aggressiveFrontEndNavCaching:true,
-	reloadOnOnline:true,
-	
-  // disable: process.env.NODE_ENV === 'development',
-	disable:false,
-  register: true,
-	workboxOptions:{
-		disableDevLogs:true,
-	}
+const nextConfig ={
 
-});
+};
 
-
-
-module.exports=  PWA({
-	reactStrictMode: true,
-	compiler: {
-		removeConsole: process.env.NODE_ENV !== 'development',
-	},
-});
+module.exports = Serwist({
+	swSrc: "src/app/sw.ts",
+	swDest: "public/sw.js",
+})(nextConfig);
