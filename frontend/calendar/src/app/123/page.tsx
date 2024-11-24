@@ -17,7 +17,7 @@ export default function Page123() {
   return (
     <>
       <div>
-        <div className="items-center justify-items-center mx-auto p-5 max-w-28">
+        <div className="items-center justify-items-center mx-auto p-5 ">
         <p>Page 123</p>  
 				 <Calendar 
       aria-label="Date (Controlled)" 
