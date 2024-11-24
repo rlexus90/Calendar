@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "18": "^0.0.0",
+    "@ducanh2912/next-pwa": "^10.2.9",
     "@internationalized/date": "^3.6.0",
     "@nextui-org/calendar": "^2.0.12",
     "@nextui-org/system": "^2.2.6",
